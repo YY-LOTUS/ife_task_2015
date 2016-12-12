@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>任务二：零基础HTML及CSS编码（一）</title>
+		<style type="text/css">
+			body{margin:0px;background:#dedede;}
+			nav,footer{
+				height:60px;margin:0px;background:#333333;
+			}
+			footer{text-align: center;}
+			nav ul{margin:0px;padding-top:22px;padding-right:21px;padding-bottom:27px;float:right;}
+			nav li{padding-left:20px;float:left;list-style-position: inside;}
+			nav li a{font-weight:bold;color:white;text-decoration: none;}
+			nav ul li:nth-child(4) a{
+				color:#9f9fa1;
+			}
+			.arcticle,aside{
+				margin:20px;
+				padding:21px;
+				background:white;
+				border:1px solid #cacaca;
+				border-bottom: 3px solid #cbcbcb;
+				box-shadow: 0px 3px 3px 0px;
+			}
+			.arcticle h3{color:gray;}
+			.arcticle p:nth-child(3){color:gray;}
+			.text_indent{text-indent: 2em;}
+			.arcticle ul{list-style-type: none;}
+			.picture{
+				overflow: hidden;
+				width:122px;
+				height:126px;
+				border: 1px solid #cccccc;
+				padding: 10px;
+				margin:15px auto 15px 60px ;
+				text-align: center;
+			}
+			table{
+				width:100%;
+				border-collapse: collapse;
+				border: 1px solid #cccccc;
+			}
+			table tr:first-child{
+				background-color: #333333;
+				font-weight: bold ;
+				color:white;
+			}
+			table tr:last-child{
+			background-color: #cccccc;
+				font-weight: bold ;
+				color:black;	
+			}
+			th,td{
+				border:1px solid #e6e6e6;
+				padding-left:5px;
+			}
+			th{
+				text-align: left;
+			}
+			#table_data>td{
+				border-bottom-color: #cccccc ;
+			} 
+			/* 这个方法不对……如何将第二个行的下边框改颜色？样式的优先级*/
+			#blank{
+				float: left;
+				width:3px;
+				height:38px;
+				margin-top: 20px;
+				margin-right: 10px;
+				background-color: #cecece;
+			}
+			.e_mail,.password_2{
+				padding-left: 269px;
+			}
+			form p{padding-left: 394px;}
+			.password_1{padding-left: 301px;}
+			.sex,.hobbies,.city{
+				padding-left: 343px;
+			}
+			.description{padding-left: 319px;}
+			input,select,textarea{
+				margin-left:14px;
+			}
+			select{
+				border: 1px solid #cccccc;
+				border-radius:4px ;
+			}
+			textarea{
+				width:85%;
+				height:100px;
+				border:1px solid black;
+			}
+			.submit{
+				width: 100%;
+				background-color: #3355d0;
+				text-align: center;
+				border-radius: 8px;
+			}
+			.submit input{
+				border: none;
+				background-color: inherit;
+				color: white;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<img src="百度.jpg"/>
+			<ul>
+				<li><a href="">导航链接一</a></li>
+				<li><a href="">导航链接二</a></li>
+				<li><a href="">导航链接三</a></li>
+				<li><a href="">导航链接四</a></li>
+			</ul>
+		</nav>
+		<article class="arcticle">
+			<h2>文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<p>文章作者          文章发表时间</p>                             
+			<p class="text_indent">这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,<br/>换行了<br/>
+			这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,换行了<br/>
+			这是一段长段落,这是一段长段落,<a href="http://ife.baidu.com">这里有一个链接连接到http://ife.baidu.com</a>这是一段长段落,这是一段长段落,<strong>这里有个粗体字</strong>这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落。
+			<p>
+			<img src="http://i0.hdslb.com/bfs/archive/44ec7a7a8f75f133db5c326fe5a00e56b789468d.png" />
+			<p class="text_indent">这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,换行了<br/>这是一段长段落,这是一段长段落,这是一段长段落,<strong>这里有个粗体字</strong>这是一段长段落,这是一段长段落,
+			<a href="http://ife.baidu.com" target="_blank">这里有个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落。
+			</p>
+		</article>
+		<article class="arcticle">
+			<h2>另一篇文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<p>文章作者          文章发表时间</p>
+			<p class="text_indent">这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,<br/>换行了<br/>
+			这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,换行了<br/>
+			这是一段长段落,这是一段长段落,<a href="http://ife.baidu.com">这里有一个链接连接到http://ife.baidu.com</a>这是一段长段落,这是一段长段落,<strong>这里有个粗体字</strong>这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落,这是一段长段落。
+			<p>
+			<img src="viewphoto.jpg" alt="我的头像"/>
+			<ul>
+				<li>列表项目一</li>
+				<li>列表项目二</li>
+				<li>列表项目三</li>
+			</ul>
+		</article>
+		<article class="arcticle">
+			<h2>图片</h2>
+			<div class="picture">
+				<p>好看的图片</p>
+				<img src="viewphoto.jpg" alt="我的头像"/><br/>
+			</div>
+			<div class="picture">
+				<span>好看的图片</span><br />
+				<img src="viewphoto.jpg" alt="我的头像"/>
+			</div>
+			<div class="picture">
+				<p>好看的图片</p>
+				<img src="viewphoto.jpg" alt="我的头像"/>
+			</div>
+		</article>
+		<article class="arcticle">
+			<h2>最后一篇文章的一级标题</h2>
+			<h3>文章二级标题</h3>
+			<p>作者：贺荣 时间：2016年11月29日</p>
+			<ol>
+				<li>排名1</li>
+				<li>排名2</li>
+				<li>排名3</li>
+			</ol>
+			<p>下面是一个一个表格，给表格加了一个border="1"好让你看出这是个表格</p>
+			<table border="1px">
+				<tr>
+					<th>表头1</th>
+					<th>表头2</th>
+					<th>表头3</th>
+				</tr>
+				<tr class="table_data">
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="http://ife.baidu.com" title="百度前端技术学院">操作</a></td>
+				</tr>
+				<tr id="table_data">
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="http://ife.baidu.com" title="百度前端技术学院">操作</a></td>
+				</tr>
+				<tr class="table_data">
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="http://ife.baidu.com" title="百度前端技术学院">操作</a></td>
+				</tr>
+				<tr class="table_data">
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="">操作</a></td>
+				</tr>
+				<tr>
+					<td>总计</td>
+					<td colspan="2">1000</td>
+				</tr>
+			</table>
+		</article>
+		<aside>
+			<div id="blank">
+				
+			</div>
+			<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+			<form>
+				<p class="e_mail">请输入邮箱地址<input id="e-mail" value="这是一个文本输入框"/></p>
+				<p>邮箱地址请按要求格式输入</p>
+				<p class="password_1">请输入密码<input type="password" value="123456789"/></p>
+				<p class="password_2">请重复输入密码<input type="password" value="123456789"/></p>
+				<p>密码为6-16位英文数字</p>
+			</form>
+			<form>
+				<p class="sex">
+					性别<input type="radio" name="sex" checked=""/>男 <input type="radio" name="sex"/>女
+				</p>
+				<p class="city">城市
+					<select>
+						<option>北京</option>
+						<option>上海</option>
+						<option>广州</option>
+						<option>深圳</option>
+					</select>
+				</p>
+				<p class="hobbies">
+					爱好
+					<input type="checkbox" />运动
+					<input type="checkbox" />艺术
+					<input type="checkbox" />科学 
+				</p>
+				<p class="description">
+					个人描述<textarea>这是一个多行输入框，输入你的个人描述</textarea>
+				</p>
+				<div class="submit">
+					<input type="submit" value="确定提交" />
+				</div>
+				
+			</form>
+		</aside>
+		<footer>
+			版权所有 &#169
+		</footer>
+	</body>
+</html>
